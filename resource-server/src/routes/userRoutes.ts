@@ -1,6 +1,6 @@
 import {Router} from "express";
 import {getUserService} from "../services/userService";
-import {UserRequest} from "../models/userRequest";
+import {UserRequest} from "../models/user";
 
 const router = Router();
 

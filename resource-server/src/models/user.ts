@@ -43,3 +43,10 @@ export class User implements IUser {
         return this.firstName + " " + this.lastName;
     }
 }
+
+export class UserRequest {
+    firstName: string;
+    lastName: string;
+    username: string;
+    password: string;
+}

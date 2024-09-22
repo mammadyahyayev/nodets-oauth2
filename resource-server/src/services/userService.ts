@@ -1,8 +1,8 @@
 import bcrypt from 'bcrypt';
 import {v4 as uuidv4} from 'uuid';
 import {IUser, User} from "../models/user";
-import {assertNotNull} from "../utils/string-utils";
-import {UserRequest} from "../models/user-request";
+import {assertNotNull} from "../utils/stringUtils";
+import {UserRequest} from "../models/user";
 
 const DEFAULT_SALT_ROUND = 12;
 
