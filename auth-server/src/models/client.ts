@@ -1,15 +1,18 @@
-interface IClient {
+export interface IClient {
     clientId: string;
     clientSecret: string;
+    name: string;
 }
 
-class Client implements IClient {
+export class Client implements IClient {
     clientId: string;
     clientSecret: string;
+    name: string;
 
-    constructor(clientId: string, clientSecret: string) {
+    constructor(clientId: string, clientSecret: string, name: string) {
         this.clientId = clientId;
         this.clientSecret = clientSecret;
+        this.name = name;
     }
 }
 
