@@ -24,3 +24,12 @@ export class Client implements IClient {
     }
 }
 
+export class ClientRegistrationRequest {
+    name: string;
+    redirectUris: string[];
+
+    constructor(name: string, redirectUris: string[] = []) {
+        this.name = name;
+        this.redirectUris = redirectUris;
+    }
+}

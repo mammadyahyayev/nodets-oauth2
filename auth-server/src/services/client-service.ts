@@ -1,15 +1,19 @@
-import {Client, IClient} from "../models/client";
+import {Client, ClientRegistrationRequest, IClient} from "../models/client";
 import {v4 as uuidv4} from 'uuid';
 
 export interface IClientService {
-    registerClient: (name: string, redirectUris: string[], errCallback: (text: string) => void) => IClient
+    registerClient: (request: ClientRegistrationRequest, errCallback: (text: string) => void) => IClient
 }
 
 const registeredClients: Map<string, IClient> = new Map<string, IClient>();
 
 class ClientService implements IClientService {
-    registerClient(name: string, redirectUris: string[] = [], errCallback: (text: string) => void): IClient {
-        const clientId: string = name + uuidv4();
+    registerClient(request: ClientRegistrationRequest, errCallback: (text: string) => void): IClient {
+        if (!request.name) {
+            errCallback("client name cannot be null or empty");
+        }
+
+        const clientId: string = `${request.name}-${uuidv4()}`;
         const clientSecret: string = uuidv4();
 
         if (registeredClients.has(clientId)) {
@@ -17,12 +21,12 @@ class ClientService implements IClientService {
         }
 
         const client: IClient = new Client(
-            name,
+            request.name,
             clientId,
             clientSecret,
-            redirectUris
+            request.redirectUris
         );
-        console.log(name + " registered as a client")
+        console.log(request.name + " registered as a client")
         //todo: save client to db
         registeredClients.set(clientId, client);
         return client
