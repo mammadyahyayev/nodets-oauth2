@@ -1,25 +1,25 @@
 import {UserRequest} from "./models/user-request";
+import {getUserService} from "./services/user-service";
 
 const express = require('express');
-
-import {createUser, findAllUsers} from "./services/user-service";
 
 const app = express();
 const port = 3000;
 
 app.use(express.json())
 
+const userService = getUserService();
+
 app.get('/api/v1/users', (req: any, res: any): void => {
-    res.send(findAllUsers());
+    res.send(userService.findAllUsers());
 })
 
 app.post('/api/v1/users', async (req: any, res: any): Promise<void> => {
-    const {firstName, lastName, username, password}: UserRequest = req.body
-    const errCallback = (msg: string): void => res.send({error: msg});
-    const user = await createUser({firstName, lastName, username, password}, errCallback);
+    const request: UserRequest = req.body
+    const user = await userService.createUser(request, (msg: string) => res.send({error: msg}));
     res.send(user);
 })
 
 app.listen(port, () => {
-    console.log("Listening on port", port);
+    console.log("resource server listening on port", port);
 })
