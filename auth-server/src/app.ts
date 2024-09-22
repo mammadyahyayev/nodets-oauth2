@@ -4,13 +4,14 @@ import {IClient} from "./models/client";
 const express = require('express');
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
 app.use(express.json())
 
 app.post('/api/v1/clients/register', (req: any, res: any): void => {
-    const {name} = req.body;
-    const client: IClient = getClientService().registerClient(name);
+    const {name, redirectedUris} = req.body;
+    const errCallback = (msg: string) => res.send({error: msg});
+    const client: IClient = getClientService().registerClient(name, redirectedUris, errCallback);
     res.send(client)
 })
 
