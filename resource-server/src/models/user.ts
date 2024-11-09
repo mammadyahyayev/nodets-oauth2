@@ -1,5 +1,3 @@
-import {realpathSync} from "node:fs";
-
 export interface IUser {
     id: string;
     firstName: string;
@@ -49,4 +47,11 @@ export class UserRequest {
     lastName: string;
     username: string;
     password: string;
+
+    constructor(firstName: string, lastName: string, username: string, password: string) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.username = username;
+        this.password = password;
+    }
 }
