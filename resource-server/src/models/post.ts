@@ -3,5 +3,5 @@ interface IPost {
     title: string;
     publishedAt: string;
     tags: string[];
-    userId: string
+    username: string
 }
