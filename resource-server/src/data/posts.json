@@ -1,0 +1,205 @@
+[
+    {
+        "id": 1,
+        "title": "How to write good code in Java?",
+        "publishedAt": "2024-06-05T06:43:32.520Z",
+        "tags": ["oop", "java", "cleancode"],
+        "username": "nicholasjackson"
+    },
+    {
+        "id": 2,
+        "title": "Understanding Spring Boot Fundamentals",
+        "publishedAt": "2024-06-07T09:15:23.321Z",
+        "tags": ["spring", "java", "framework"],
+        "username": "ameliaclark"
+    },
+    {
+        "id": 3,
+        "title": "A Guide to Microservices Architecture",
+        "publishedAt": "2024-06-10T11:30:12.654Z",
+        "tags": ["microservices", "architecture", "cloud"],
+        "username": "jamesbrown"
+    },
+    {
+        "id": 4,
+        "title": "Best Practices for REST API Development",
+        "publishedAt": "2024-06-12T14:45:00.789Z",
+        "tags": ["api", "rest", "bestpractices"],
+        "username": "elizabethsmith"
+    },
+    {
+        "id": 5,
+        "title": "Top 10 Java Design Patterns",
+        "publishedAt": "2024-06-15T08:20:44.123Z",
+        "tags": ["designpatterns", "java", "softwaredesign"],
+        "username": "danieltaylor"
+    },
+    {
+        "id": 6,
+        "title": "Getting Started with Hibernate ORM",
+        "publishedAt": "2024-06-18T13:10:30.456Z",
+        "tags": ["hibernate", "java", "orm"],
+        "username": "graceallen"
+    },
+    {
+        "id": 7,
+        "title": "Building Secure Applications with JWT",
+        "publishedAt": "2024-06-20T07:55:20.567Z",
+        "tags": ["security", "jwt", "authentication"],
+        "username": "michaeldavis"
+    },
+    {
+        "id": 8,
+        "title": "Unit Testing with JUnit 5",
+        "publishedAt": "2024-06-22T10:40:15.321Z",
+        "tags": ["testing", "junit", "java"],
+        "username": "sophiathomas"
+    },
+    {
+        "id": 9,
+        "title": "Introduction to Reactive Programming in Java",
+        "publishedAt": "2024-06-25T16:30:22.789Z",
+        "tags": ["reactive", "programming", "java"],
+        "username": "williamwhite"
+    },
+    {
+        "id": 10,
+        "title": "Spring Boot and MongoDB Integration",
+        "publishedAt": "2024-06-28T15:05:30.123Z",
+        "tags": ["springboot", "mongodb", "database"],
+        "username": "victorlewis"
+    },
+    {
+        "id": 11,
+        "title": "Understanding the Java Memory Model",
+        "publishedAt": "2024-07-02T08:15:44.456Z",
+        "tags": ["java", "memory", "concurrency"],
+        "username": "emmajohnson"
+    },
+    {
+        "id": 12,
+        "title": "How to Use Kafka in Java Applications",
+        "publishedAt": "2024-07-05T11:25:50.789Z",
+        "tags": ["kafka", "java", "messaging"],
+        "username": "nathanmartin"
+    },
+    {
+        "id": 13,
+        "title": "Understanding Dependency Injection in Spring",
+        "publishedAt": "2024-07-08T17:35:40.321Z",
+        "tags": ["spring", "dependencyinjection", "java"],
+        "username": "alexandrabaker"
+    },
+    {
+        "id": 14,
+        "title": "Mastering Java Streams API",
+        "publishedAt": "2024-07-12T13:50:55.123Z",
+        "tags": ["streams", "java", "functional"],
+        "username": "jackadams"
+    },
+    {
+        "id": 15,
+        "title": "Exception Handling in Java: Best Practices",
+        "publishedAt": "2024-07-15T09:05:22.456Z",
+        "tags": ["java", "exceptions", "errorhandling"],
+        "username": "oliviawilson"
+    },
+    {
+        "id": 16,
+        "title": "Effective Debugging Techniques in Java",
+        "publishedAt": "2024-07-18T14:15:10.567Z",
+        "tags": ["debugging", "java", "productivity"],
+        "username": "liamscott"
+    },
+    {
+        "id": 17,
+        "title": "Concurrency in Java: A Deep Dive",
+        "publishedAt": "2024-07-21T12:30:35.789Z",
+        "tags": ["concurrency", "java", "threads"],
+        "username": "zoelawrence"
+    },
+    {
+        "id": 18,
+        "title": "Java Generics Explained",
+        "publishedAt": "2024-07-25T07:20:10.321Z",
+        "tags": ["generics", "java", "typesafety"],
+        "username": "charlesharris"
+    },
+    {
+        "id": 19,
+        "title": "Introduction to Spring Data JPA",
+        "publishedAt": "2024-07-28T16:45:50.123Z",
+        "tags": ["springdata", "jpa", "java"],
+        "username": "lucyparker"
+    },
+    {
+        "id": 20,
+        "title": "Creating RESTful Services with Spring Boot",
+        "publishedAt": "2024-08-01T10:05:40.456Z",
+        "tags": ["rest", "springboot", "java"],
+        "username": "henryroberts"
+    },
+    {
+        "id": 21,
+        "title": "Migrating from Java 8 to Java 17",
+        "publishedAt": "2024-08-03T18:30:15.789Z",
+        "tags": ["java", "migration", "jdk"],
+        "username": "miawatson"
+    },
+    {
+        "id": 22,
+        "title": "Getting Started with Maven in Java",
+        "publishedAt": "2024-08-05T14:20:22.567Z",
+        "tags": ["maven", "java", "buildtools"],
+        "username": "ethanmoore"
+    },
+    {
+        "id": 23,
+        "title": "How to Use Lombok for Boilerplate Code",
+        "publishedAt": "2024-08-07T09:40:33.789Z",
+        "tags": ["lombok", "java", "productivity"],
+        "username": "harpercollins"
+    },
+    {
+        "id": 24,
+        "title": "Exploring Java 17 New Features",
+        "publishedAt": "2024-08-09T13:15:44.321Z",
+        "tags": ["java", "jdk17", "features"],
+        "username": "sebastianwright"
+    },
+    {
+        "id": 25,
+        "title": "How to Optimize Java Performance",
+        "publishedAt": "2024-08-12T11:30:55.123Z",
+        "tags": ["performance", "java", "optimization"],
+        "username": "isabellahall"
+    },
+    {
+        "id": 26,
+        "title": "Using Docker for Java Development",
+        "publishedAt": "2024-08-15T16:25:20.456Z",
+        "tags": ["docker", "java", "development"],
+        "username": "benjaminbrown"
+    },
+    {
+        "id": 27,
+        "title": "Spring Boot Testing with MockMVC",
+        "publishedAt": "2024-08-18T08:10:15.789Z",
+        "tags": ["testing", "springboot", "mockmvc"],
+        "username": "nataliesanchez"
+    },
+    {
+        "id": 28,
+        "title": "Best Practices for Java Coding Style",
+        "publishedAt": "2024-08-20T12:35:22.321Z",
+        "tags": ["java", "bestpractices", "style"],
+        "username": "nicholasjackson"
+    },
+    {
+        "id": 29,
+        "title": "Creating Custom Annotations in Java",
+        "publishedAt": "2024-08-22T15:45:10.123Z",
+        "tags": ["annotations", "java", "custom"],
+        "username": "katherinelee"
+    }
+]
