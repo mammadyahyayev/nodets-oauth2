@@ -1,0 +1,24 @@
+# Documentation & Implementations
+
+## Resource Server
+
+Resource servers keeps the resources such as users, posts.
+
+- [ ] Keep a list of users and their information in json files. 
+- [ ] Keep a list of posts that published by users in json files.
+- [ ] Provide REST API to fetch users and post information.
+- [ ] Show connected clients (apps) to users permissions to end users. e.g. caspian app uses your firstname and lastname...
+
+## Authentication Server
+
+Authentication server keeps the client and their assigned permissions.
+
+- [ ] keep client related information (clientIds, clientSecrets, client identity and permissions) in a json file.
+- [ ] create middlewares to check permissions of client.
+- [ ] provide revoking access functionality by users.
+
+## Caspian Client
+
+Caspian Client is an application that use identity provider for authentication and authorization.
+
+- [ ] create a UI to show latest posts by logged in users. 
