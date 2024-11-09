@@ -12,6 +12,7 @@ const DEFAULT_SALT_ROUND = 12;
 export interface IUserService {
     createUser: (request: UserRequest, errCallback: (err: any) => void) => Promise<IUser | undefined>
     findAllUsers: () => IUser[];
+    findByUsername: (username: string) => IUser | undefined;
 }
 
 export const getUserService = (): IUserService => {
@@ -47,19 +48,33 @@ class UserService implements IUserService {
             return this.users;
         }
 
-        fs.readFileSync(this.usersDataFilePath, 'utf8', (err: any, usersData: string) => {
-            if (err) throw err;
-
-            console.log('Reading users data from file: ', this.usersDataFilePath)
-
-            this.users.push(JSON.parse(usersData));
-        })
+        this.loadUsers();
 
         return this.users;
     }
 
+    findByUsername(username: string): IUser | undefined {
+        assertNotNull(username, 'username');
+        
+        if (this.users && this.users.length <= 0) {
+            this.loadUsers();
+        }
+
+        return this.users.find(user => user.username === username);
+    }
+
     private isUserExistByUsername(username: string): boolean {
         return this.users.find(user => user.username == username) != undefined;
+    }
+
+    private loadUsers(): void {
+        fs.readFile(this.usersDataFilePath, 'utf8', (err: any, usersData: string) => {
+            if (err) throw err;
+
+            console.log('Reading users data from file: ', this.usersDataFilePath)
+
+            this.users.push(...JSON.parse(usersData));
+        })
     }
 }
 
