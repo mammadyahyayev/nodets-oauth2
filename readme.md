@@ -6,7 +6,7 @@ Resource servers keeps the resources such as users, posts.
 
 - [X] Keep a list of users and their information in json files. 
 - [X] Keep a list of posts that published by users in json files.
-- [ ] Provide REST API to fetch users information.
+- [X] Provide REST API to fetch users information.
 - [ ] Provide REST API to fetch posts information.
 - [ ] Show connected clients (apps) to users permissions to end users. e.g. caspian app uses your firstname and lastname...
 
